@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Good Game Spot</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+            console.log('Hello console');
+        </script>
+    
+    <div class="header">
+        <header>
+            <h1>Good Game Spot</h1>
+        </header>
+    </div>
+    
+    <div class="navbar">
+    <nav>
+            <ul>
+                <li>About</li>
+                <li>All Reviews</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        </div>
+
+ 
+ <img id="MainSection" src="controller3.jpg">
+ 
+<section class="testtext"> The only reviews by gamers, for gamers  </section>
+ 
+<section class="info">
+
+<article>
+        <p>
+        <h2>Top 10 Games of 2023 so far</h2>
+        <ol>
+            <li>Game 1</li>
+            <li>Game 2</li>
+            <li>Game 3</li>
+            <li>Game 4</li>
+            <li>Game 5</li>
+            <li>Game 6</li>
+            <li>Game 7</li>
+            <li>Game 8</li>
+            <li>Game 9</li>
+            <li>Game 10</li>
+        </ol>
+    </article>
+
+    <article>
+             <p>
+            <h2> Want a good RPG? Here are our picks </h2>
+            <p> When it comes to RPG's , we got you covered.</p>
+            <ul id="RPG">
+                <li>Game 1</li>
+                <li>Game 1</li>
+                <li>Game 1</li>
+                <li>Game 1</li>
+                <li>Game 1</li>
+            </ul>
+            </p>
+    </article>
+
+    <article id="Co-Op">
+        <p>
+       <h2> Best Co-Op Free to Play Games </h2>
+There really is not alot to choose from here. <br> Alot are just all pay to wins sadly.
+</article>
+
+<form method="post">
+</section>
+
+<section id="Forms" >
+    <h2> <span> We Want Your Say!</span>  </h2>
+
+<div onClick="alert('Please answer truthfully!');" class="trust">
+     <h4>Do you trust game reviews online? </h4>
+        <input type="radio" 
+        name="reviews" id="trust-game" value="yes">
+        <label for="trust-game"> Yes </label>
+        <input type="radio"
+        name="reviews" id="no-game" value="no">
+        <label for="trust-game"> No </label>
+</div>
+
+<br>
+
+<div>
+
+<label id="new-title" onmouseover="mouseOver()" onmouseout="mouseOut()">Which upcoming titles are you most excited for? </label>
+
+    <input type="checkbox"
+    name="game-one" id="game-one" value="starfield">
+    <label for="game-one">Starfield</label>
+    <br>
+    <input type="checkbox"
+    name="game-two" id="game-two" value="mortal">
+    <label for="game-two">Mortal Kombat 1</label>
+    <br>
+    <input type="checkbox"
+    name="game-three" id="game-three" value="core">
+    <label for="game-three">Armored Core VI: Fires of Rubicon </label>
+    <br>
+    <input type="checkbox"
+    name="game-four" id="game-four" value="spider">
+    <label for="game-three">Marvel's Spider-Man 2 </label>
+</div>
+
+<br/>
+
+<div>
+<label id="main" ondblclick="dblClick()">What is your main  gaming platform? </label> 
+<select id="gaming-platform" name="gaming-platform">
+    <option value="">Choose One </option>
+    <option value="Xbox"> Xbox </option>
+    <option value="Playstation"> Playstation </option>
+    <option value="PC"> PC </option>
+    <option value="Switch"> Switch </option>          
+</select>
+</div>
+
+<!-- added the h4 and label below for a quick styling solution. Still wanted to include the label for accessibility-->
+
+<div id="questions" onclick="bestGame()">
+<label> Best game of 2023 so far? </label>
+<input type="text" name="best-game" max="100" >
+
+<br/>
+
+<label> Worst game of 2023 so far? </label>
+<input type="text" name="worst-game" max="100" >
+
+<br/>
+
+<label for="DLC">
+     What are your thoughts on DLC?
+</label>
+<textarea id="DLC" onchange="download()">
+I think DLC is....
+</textarea>
+
+
+</div>
+
+<div id="right-click" oncontextmenu="rightClick()">
+    Right Click Here....
+</div>
+
+
+
+</form>
+</section>
+
+<script>
+let message = "Hello there"
+console.log(message);
+
+<!--document.querySelector(".new-title").style.color = "navy";-->
+
+function bestGame() {document.getElementById("questions").style.color = "red";}
+
+function mouseOver() {
+  document.getElementById("new-title").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("new-title").style.color = "black";
+}
+
+function rightClick() {document.getElementById("right-click").style.color = "red";
+}
+
+function dblClick() {
+  document.getElementById("main").style.color = "red";
+}
+
+function download() {var x = document.getElementById("DLC");
+  x.value = x.value.toUpperCase();}
+
+
+
+</script>
+
+<footer id="Footer"> 
+    © Good Game Spot 2023
+    <a href="https://www.pwc.com.au/about-us/social-impact/Privacy-Policy-Template.docx.pdf"> Privacy Policy </a>
+</footer>
+    </body>
+
+    </html>
